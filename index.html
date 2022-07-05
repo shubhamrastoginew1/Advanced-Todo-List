@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Advacned Todo List | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>   
+
+    <header>
+        <h2 class="title"> Advanced Todo List</h1>
+        <p class="myIntro">Made By Shubham Rastogi</p>
+    </header>
+
+
+
+    <ul class="tasks">
+        
+    </ul> 
+
+    
+    <div class="container">
+        <form action="" id="inputs">
+            <!-- <label for="input">Task Name</label> -->
+            <input type="text" id="input" placeholder="Task Name">
+            <input type="text" name="" id="description" placeholder="Description">
+            <div class="options">
+                <button type="reset" class="Cancel btn">Cancel</button>
+                <button type="submit" class="Add_Task btn">Add task</button>
+            </div>
+            
+        </form>
+        
+    </div>
+
+
+    <template id="temp">
+        <li class="list-item">
+            <label class="new-item-input">
+                <div class="wrapper">
+                    <input type="checkbox" name="" class="unique">
+                    <div class="flex">
+                        <span id="content"></span>
+                        <span class="description_value"></span>
+                    </div>
+                </div>
+
+                <div class="date">
+                    <span class="curr_date"></span>
+                    <span class="curr_time"></span>
+                </div>
+                <button class= 'delete newId'> <i class="fa-solid fa-trash fa-xl delete"></i> </button>
+
+            </label>
+        </li>
+    </template>
+</body>
+</html>

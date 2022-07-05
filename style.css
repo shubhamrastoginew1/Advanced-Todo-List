@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgb(75, 209, 209);
+    color: white;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-family: sans-serif;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    font-size: 1.7rem;
+}
+
+.myIntro{
+    font-style: italic;
+    margin-top: 1rem;
+    display: flex;
+    height: 100%;
+    justify-content:center;
+    align-items: flex-end;
+    width: 20%;
+}
+
+
+.tasks{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* padding-left: 2rem; */
+    /* padding-top: 1rem; */
+    background-color: rgb(222, 241, 241);
+}
+
+.tasks li{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    width: 70%;
+    margin: auto;
+    /* border-top: 1px solid white; */
+    border-bottom: 1px solid white;
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
+    /* margin-bottom: 0.2rem; */
+
+}
+.tasks li:hover{
+    border-top: 2px solid rgb(61, 61, 61);
+    border-bottom: 2px solid rgb(61, 61, 61);
+    background-color: rgb(182, 225, 225);
+    /* border-radius: 2rem; */
+    outline: none;
+}
+
+.tasks li:hover .description_value{
+    display: block;
+}
+
+#content{
+    font-size: 1.35rem;
+    font-weight: 450;
+    overflow: auto;
+    max-height: 10rem;
+    line-height: 1.6rem;
+    /* margin-bottom: 1rem; */
+}
+
+.description_value{
+    display: none;
+    font-size: 1rem;
+    color: rgb(59, 54, 54);
+    letter-spacing: 0.04em;
+    overflow: auto;
+    font-style: italic;
+    padding-top: 1rem;
+}
+
+.new-item-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.flex{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: auto;
+    max-width: 89%;
+    padding-left: 0.5rem;
+}
+
+.date{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.unique{
+    cursor: pointer;
+    position: relative;
+    accent-color: rgb(6, 138, 6);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50px;
+    
+    border-radius: 2rem;
+}
+
+.unique:hover{
+    outline: 2px solid rgb(82, 213, 82);
+}
+
+
+
+.container{
+    position: sticky;
+    bottom: 1rem;
+}
+
+#inputs{
+    border-radius: 1rem;
+    padding: 1rem 0 0 0;
+    background-color: white;
+    border: 1.2px solid #e2dede;;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+#input, #description{
+    outline: none;
+    width: 90%;
+    display: block;
+    padding: 0.5rem 0.3rem;
+    border: none;
+}
+#input{
+    font-size: 1.1rem;
+    margin-left: 0.2em;
+}
+
+#description{
+    font-size: 0.85rem;
+    color: grey;
+    margin-left: 0.5em;
+}
+
+#input:focus{
+    border-bottom: 1px solid grey;
+}
+
+#description:focus{
+    border-bottom: 1px solid grey;
+}
+
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.btn{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5em;
+    margin-right: 0.4em;
+    margin-bottom: 0.2em;
+}
+.Add_Task{
+    background-color: rgb(228, 87, 74);
+    color: white;
+}
+.Add_Task:hover{
+    background-color: red;
+}
+.Add_Task:active{
+    background-color: rgb(181, 57, 46);
+}
+
+.Cancel{
+    background-color: rgb(241, 236, 236);
+    color: black;
+}
+.Cancel:hover{
+    background-color: rgb(229, 229, 229);
+}
+.Cancel:active{
+    background-color: rgb(212, 209, 209);
+}
+
+.newId{
+    background-color: white;
+    padding: 0.7em;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+.fa-xl{
+    color: red;
+}
+
+.newId:hover .fa-xl{
+    color: white;
+}
+.newId:hover{
+    background-color: red;
+    box-shadow: 1px 1px 1px red;
+}
+.newId:active{
+    background-color: rgb(185, 32, 32);
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+    .tasks li {
+      width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .new-item-input{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
