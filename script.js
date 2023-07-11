@@ -66,7 +66,7 @@ form.addEventListener('submit', e=>{
     let newDate = new Date();
 
     let months=["Jan", "Feb", "March", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    let date = months[newDate.getMonth()-1] + " " + newDate.getDate() + ", "+ newDate.getFullYear();
+    let date = months[newDate.getMonth()] + " " + newDate.getDate() + ", "+ newDate.getFullYear();
     let hrs = (newDate.getHours()<10)? "0"+newDate.getHours() : newDate.getHours();
     let min = (newDate.getMinutes()<10)? "0"+newDate.getMinutes() : newDate.getMinutes();
     let time = hrs+":"+min;
